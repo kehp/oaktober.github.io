@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <!--<script src="main.js"></script>-->
+ <!-- <script src="jquery.ui.touch-punch.min.js"></script>-->
+</head>
+<body>
+<div id="allInfo">
+
+  <div class="slideshow-container" style="max-width: 50%;">
+
+    <div class="dot-container">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span> 
+      <span class="dot" onclick="currentSlide(5)"></span> 
+      <span class="dot" onclick="currentSlide(6)"></span>
+      <span class="dot" onclick="currentSlide(7)"></span> 
+      <span class="dot" onclick="currentSlide(8)"></span> 
+      <span class="dot" onclick="currentSlide(9)"></span>
+    </div><!--dot-container-->
+
+
+  <div id="oaksInfo">
+  <!--1 Q. agrifolia --> 
+    <div class="nativeOaks">
+          <div class="treetooltip">
+            <div class="treeName"><p class="oakName" data-oak-type="Qagrifolia"><b>Coast Live Oak</b>   <i>(Quercus agrifolia)</i></p></div><!--treeName-->
+               <span class="treetooltiptext">Evergreen tree<br><br>Grows 20 – 70 ft tall, often with an even wider spread<br><br>Rounded head, with dense foliage.</span>
+               </div><!--treetooltip-->   
+        <div class="pictureHolder">
+           <img src="images/treeQagrifolia.png" alt="Coast Live Oak" style="width:90%;">
+        </div>
+        <div class="identifiers">
+          <div class="acornOutline" id="drop1a" data-oak-type="Qagrifolia"><img  src="images/acornOutline.png" alt="acorn outline" style="width:90%;">
+            <div class="tooltip">-acorn-
+              <span class="tooltiptext">Cone-shaped<br><br>3/4 to 1 1/2 in long<br><br>1/4 of acorn is covered by a cap with thin, overlapping scales<br><br>Reddish-brown when mature</span>
+            </div><!--tooltip-->
+          </div><!--outlineDrop-->
+          <div class="leafOutline" id="drop1l" data-oak-type="Qagrifolia"><img  src="images/leafOutline.png" alt="leaf outline" style="width:90%;">
+            <div class="tooltip">-leaf-
+              <span class="tooltiptext">Oval, convex shape, holly-like with spiny-toothed edge<br><br>3/4 – 2 ¾ in long<br><br>dark green</span>
+            </div><!--tooltip-->
+          </div><!--outlineDrop-->
+          <div class="barkOutline" id="drop1b" data-oak-type="Qagrifolia"><img  src="images/barkOutline.png" alt="bark outline" style="width:90%;">
+            <div class="tooltip">-bark-
+              <span class="tooltiptext">Smooth, dark gray bark<br><br>Deeply fissured in very old trees</span>
+            </div> <!--tooltip-->
+          </div><!--outlineDrop-->
+        </div><!--identifiers-->
+    </div><!--nativeOaks-->
+    
+<!--2 Q. douglasii --> 
+    <div class="nativeOaks">
+      <div class="treetooltip">
+        <div class="treeName"><p class="oakName"><b>Blue Oak</b>   <i>(Quercus douglasii)</i></p></div><!--treeName-->
+          <span class="treetooltiptext">Deciduous tree<br><br>Grows slowly to 25 – 50 ft tall and wide<br><br>Sculptural with low wide-spreading branches and a symmetrical crown. </span>
+      </div><!--treetooltip-->   
+          <div class="pictureHolder">    
+        <img src="images/treeQdouglasii.png" alt="Blue Oak" style="width:90%;">
+          </div>
+        
+        <div class="identifiers">
+          <div class="acornOutline" id="drop2a" data-oak-type="Qdouglasii"><img src="images/acornOutline.png" alt="acorn outline" style="width:90%;">
+            <div class="tooltip">-acorn-
+              <span class="tooltiptext">Egg-shaped with a sharply pointed tip<br><br>3/4 to 1 ¼ in long<br><br>Acorns are held by a thin, flat cap</span>
+            </div><!--tooltip-->
+          </div><!--outlineDrop-->
+          <div class="leafOutline" id="drop2l" data-oak-type="Qdouglasii"><img  src="images/leafOutline.png" alt="leaf outline" style="width:90%;">
+            <div class="tooltip">-leaf-
+              <span class="tooltiptext">Oblong to elliptical shape with lobed to coarsely-toothed margins<br><br>2 – 3 in long and ¾ - 2 in wide<br><br>Distinctive pale blue-green color during summer, attractive fall colors</span>
+            </div><!--tooltip-->
+          </div><!--outlineDrop-->
+          <div class="barkOutline" id="drop2b" data-oak-type="Qdouglasii"><img  src="images/barkOutline.png" alt="bark outline" style="width:90%;">
+            <div class="tooltip">-bark-
+              <span class="tooltiptext">Light gray bark is shallowly checked with small brownish or redish squares</span>
+            </div> <!--tooltip-->
+          </div><!--outlineDrop-->
+        </div><!--identifiers-->
+    </div><!--nativeOaks-->
+
+<!--3 Q. kelloggii --> 
+    <div class="nativeOaks">
+      <div class="treetooltip">      
+       <div class="treeName"><p class="oakName"><b>Black Oak</b>   <i>(Quercus kelloggii)</i></p></div><!--treeName-->
+         <span class="treetooltiptext">Deciduous tree<br><br>Grows to 40 – 80 ft tall and 30 - 40 ft wide. <br><br>Has an upright habit with a short trunk, ascending branches and a rounded crown</span>
+      </div><!--treetooltip-->
+              <div class="pictureHolder">
+        <img src="images/treeQkelloggii.png" alt="Black Oak" style="width:90%;">
+              </div>
+        <div class="identifiers">
+          <div class="acornOutline" id="drop3a" data-oak-type="Qkelloggii"><img src="images/acornOutline.png" alt="acorn outline" style="width:90%;">
+            <div class="tooltip">-acorn-
+              <span class="tooltiptext">Oblong, almost cone-shaped<br><br>Up to 1  1/2 in long<br><br>1/2 of acorn enclosed in deep bowl-shaped cap<br><br>Immature acorn almost completely covered by cap.</span>
+            </div><!--tooltip-->
+          </div><!--outlineDrop-->
+          <div class="leafOutline" id="drop3l" data-oak-type="Qkelloggii"><img src="images/leafOutline.png" alt="leaf outline" style="width:90%;">
+            <div class="tooltip">-leaf-
+              <span class="tooltiptext">Large leaves, deeply lobed with spines on the tips<br><br>Up to 10 in long and 2 ½ - 6 in wide<br><br>New Growth is reddish-brown, matures to dark green, and turns brown, orange and red in fall.</span>
+            </div><!--tooltip-->
+          </div><!--outlineDrop-->
+          <div class="barkOutline" id="drop3b" data-oak-type="Qkelloggii"><img src="images/barkOutline.png" alt="bark outline" style="width:90%;">
+            <div class="tooltip">-bark-
+              <span class="tooltiptext">Bark is thin and smooth in young trees, becoming thick, furrowed and black with age</span>
+            </div> <!--tooltip-->
+          </div><!--outlineDrop-->
+        </div><!--identifiers-->
+    </div><!--nativeOaks-->
+
+<!--4 Q. garryana --> 
+    <div class="nativeOaks">
+      <div class="treetooltip">          
+        <div class="treeName"><p class="oakName"><b>Oregon Oak</b>   <i>(Quercus garryana)</i></p></div><!--treeName-->
+          <span class="treetooltiptext">Deciduous tree<br><br>Slow to moderate growth to 40 – 90 ft tall, 30 – 60 ft wide<br><br>Rounded crown</span>
+        </div><!--treetooltip-->
+              <div class="pictureHolder">
+        <img src="images/treeQgarryana.png" alt="Oregon Oak" style="width: 65%">
+              </div>
+        <div class="identifiers">
+          <div class="acornOutline" id="drop4a" data-oak-type="Qgarryana"><img src="images/acornOutline.png" alt="acorn outline" style="width:90%;">
+            <div class="tooltip">-acorn-
+              <span class="tooltiptext">Egg-shaped to globe-shaped<br><br>Up to 1 1/4 in long<br><br>Acorn bulges from a small, scale-covered cap</span>
+            </div><!--tooltip-->
+          </div><!--outlineDrop-->
+          <div class="leafOutline" id="drop4l" data-oak-type="Qgarryana"><img src="images/leafOutline.png" alt="leaf outline" style="width:90%;">
+            <div class="tooltip">-leaf-
+              <span class="tooltiptext">Leathery, broad, oval leaves with rounded lobes<br><br>3 – 6” long<br><br>Glossy dark green above, rusty or downy below; Turns reddish-brown in fall</span>
+            </div><!--tooltip-->
+          </div><!--outlineDrop-->
+          <div class="barkOutline" id="drop4b" data-oak-type="Qgarryana"><img src="images/barkOutline.png" alt="bark outline" style="width:90%;">
+            <div class="tooltip">-bark-
+              <span class="tooltiptext">Shallowly cracked pale gray bark</span>
+            </div> <!--tooltip-->
+          </div><!--outlineDrop-->
+        </div><!--identifiers-->
+    </div><!--nativeOaks-->
+
+<!--5 Q. lobata --> 
+    <div class="nativeOaks">
+      <div class="treetooltip">          
+        <div class="treeName"><p class="oakName"><b>Valley Oak</b>   <i>(Quercus lobata)</i></p></div><!--treeName-->
+          <span class="treetooltiptext">Deciduous tree<br><br>50 – 70 ft tall and wide<br><br>With age, trunks and branches become massive. Branches are often picturesquely twisted, with outer branches sometimes sweeping the ground</span>
+        </div><!--treetooltip-->
+              <div class="pictureHolder">
+        <img src="images/treeQlobata.png" alt="Valley Oak" style="width:87%;">
+       </div> 
+        <div class="identifiers">
+          <div class="acornOutline" id="drop5a" data-oak-type="Qlobata"><img src="images/acornOutline.png" alt="acorn outline" style="width:90%;">
+            <div class="tooltip">-acorn-
+              <span class="tooltiptext">Slender, cone-shaped and shiny<br><br>1 to 2 1/4 in long<br><br>1/3 of acorn is enclosed by a hard, warty, bowl-shaped cap</span>
+            </div><!--tooltip-->
+          </div><!--outlineDrop-->
+          <div class="leafOutline" id="drop5l" data-oak-type="Qlobata"><img src="images/leafOutline.png" alt="leaf outline" style="width:90%;">
+            <div class="tooltip">-leaf-
+              <span class="tooltiptext">Deeply cut rounded lobes<br><br>3 – 4 in long, 2 – 3 in wide<br><br>Dark green above, lighter with fine hairs below </span>
+            </div><!--tooltip-->
+          </div><!--outlineDrop-->
+          <div class="barkOutline" id="drop5b" data-oak-type="Qlobata"><img src="images/barkOutline.png" alt="bark outline" style="width:90%;">
+            <div class="tooltip">-bark-
+              <span class="tooltiptext">Distinct, deeply furrowed gray bark; becomes heavily fissured with age.</span>
+            </div> <!--tooltip-->
+          </div><!--outlineDrop-->
+        </div><!--identifiers-->
+    </div><!--nativeOaks-->
+
+<!--6 Q. wislizenii --> 
+    <div class="nativeOaks">
+      <div class="treetooltip">          
+        <div class="treeName"><p class="oakName"><b>Interior Live Oak</b>   <i>(Quercus wislizenii)</i></p></div><!--treeName-->
+          <span class="treetooltiptext">Evergreen tree<br><br>30 – 75 ft tall, often broader than tall<br><br>Spreading, with dense, rounded canopy<br><br>Young plants are sparse and angular</span>
+        </div><!--treetooltip-->
+               <div class="pictureHolder">
+        <img src="images/treeQwislizenii.png" alt="Interior Live Oak" style="width:87%;">
+               </div>
+        <div class="identifiers">
+          <div class="acornOutline" id="drop6a" data-oak-type="Qwislizenii"><img src="images/acornOutline.png" alt="acorn outline" style="width:90%;">
+            <div class="tooltip">-acorn-
+              <span class="tooltiptext">Slender, cone-shaped with a sharp point<br><br>3/4 to 1 1/2 in long<br><br>1/4 to 1/2 of acorn is enclosed in a flat, scaled cap</span>
+            </div><!--tooltip-->
+          </div><!--outlineDrop-->
+          <div class="leafOutline" id="drop6l" data-oak-type="Qwislizenii"><img src="images/leafOutline.png" alt="leaf outline" style="width:90%;">
+            <div class="tooltip">-leaf-
+              <span class="tooltiptext">Elliptical-shaped leaf with an abruptly pointed tip<br><br>1 – 1 1 /2 in long<br><br>Edges are usually spiny, but can be smooth<br><br>Glossy dark green</span>
+            </div><!--tooltip-->
+          </div><!--outlineDrop-->
+          <div class="barkOutline" id="drop6b" data-oak-type="Qwislizenii"><img src="images/barkOutline.png" alt="bark outline" style="width:90%;">
+            <div class="tooltip">-bark-
+              <span class="tooltiptext">Blackish or reddish-bark</span>
+            </div> <!--tooltip-->
+          </div><!--outlineDrop-->
+        </div><!--identifiers-->
+    </div><!--nativeOaks-->
+    
+<!--7 Q. berberidifolia --> 
+    <div class="nativeOaks">
+      <div class="treetooltip">          
+        <div class="treeName"><p class="oakName"><b>Scrub Oak</b>   <i>(Quercus berberidifolia)</i></p></div><!--treeName-->
+          <span class="treetooltiptext">Semievergreen shrub or tree<br><br>6 – 15 ft tall and wide<br><br>Dense growth</span>
+        </div><!--treetooltip-->
+               <div class="pictureHolder">
+        <img src="images/treeQberberidifolia.png" alt="Scrub Oak" style="width:87%;">
+               </div>
+        <div class="identifiers">
+          <div class="acornOutline" id="drop7a" data-oak-type="Qberberidifolia"><img src="images/acornOutline.png" alt="acorn outline" style="width:90%;">
+            <div class="tooltip">-acorn-
+              <span class="tooltiptext">Oval acorns<br><br>Up to 1” long<br><br>Up to one half covered by knobby cap with spiral pattern</span>
+            </div><!--tooltip-->
+          </div><!--outlineDrop-->
+          <div class="leafOutline" id="drop7l" data-oak-type="Qberberidifolia"><img src="images/leafOutline.png" alt="leaf outline" style="width:90%;">
+            <div class="tooltip">-leaf-
+              <span class="tooltiptext">Shape is variable, with wavy edges.<br><br>Can have smooth, toothed or spiny margins<br><br>Medium dull green above, gray-green below</span>
+            </div><!--tooltip-->
+          </div><!--outlineDrop-->
+          <div class="barkOutline" id="drop7b" data-oak-type="Qberberidifolia"><img src="images/barkOutline.png" alt="bark outline" style="width:90%;">
+            <div class="tooltip">-bark-
+              <span class="tooltiptext">Gray, scaly bark</span>
+            </div> <!--tooltip-->
+          </div><!--outlineDrop-->
+        </div><!--identifiers-->
+    </div><!--nativeOaks-->
+
+<!--8 Q. durata --> 
+    <div class="nativeOaks">
+      <div class="treetooltip">          
+        <div class="treeName"><p class="oakName"><b>Leather Oak</b>   <i>(Quercus durata)</i></p></div><!--treeName-->
+          <span class="treetooltiptext">Evergreen shrub<br><br>Grows to 10 ft tall and 8 – 12 ft wide<br><br>Can be bare and leggy up to 3 – 5 ft above the ground. <br><br>Dense, rounded growth</span>
+        </div><!--treetooltip-->
+ <div class="pictureHolder">
+        <img src="images/treeQdurata.png" alt="Leather Oak" style="width: 100%;">
+   </div>     
+        <div class="identifiers">
+          <div class="acornOutline" id="drop8a" data-oak-type="Qdurata"><img src="images/acornOutline.png" alt="acorn outline" style="width:90%;">
+            <div class="tooltip">-acorn-
+              <span class="tooltiptext">Cylinder-shaped<br><br>1/2 to 1 in long<br><br>1/2 of acorn enclosed in a warty, bowl-shaped cap</span>
+            </div><!--tooltip-->
+          </div><!--outlineDrop-->
+          <div class="leafOutline" id="drop8l" data-oak-type="Qdurata"><img src="images/leafOutline.png" alt="leaf outline" style="width:90%;">
+            <div class="tooltip">-leaf-
+              <span class="tooltiptext">Tough, oval, convex leaves<br><br>3/4 – 1 in long<br><br>Can have smooth or prickly edges<br><br>Dark green above, pale gray beneath with dense fine hairs</span>
+            </div><!--tooltip-->
+          </div><!--outlineDrop-->
+          <div class="barkOutline" id="drop8b" data-oak-type="Qdurata"><img src="images/barkOutline.png" alt="bark outline" style="width:90%;">
+            <div class="tooltip">-bark-
+              <span class="tooltiptext">Gray or yellowish twigs have scaly bark</span>
+            </div> <!--tooltip-->
+          </div><!--outlineDrop-->
+        </div><!--identifiers-->
+    </div><!--nativeOaks-->
+
+<!--9 Q. chrysolepis --> 
+    <div class="nativeOaks">
+      <div class="treetooltip">          
+        <div class="treeName"><p class="oakName"><b>Canyon Live Oak</b>   <i>(Quercus chrysolepis)</i></p></div><!--treeName-->
+          <span class="treetooltiptext">Evergreen tree<br><br>Grows slowly, 20 – 60 ft tall and wide<br><br>Round head or spreading, with dense growth habit</span>
+        </div><!--treetooltip-->
+         <div class="pictureHolder">
+        <img src="images/treeQchrysolepis.png" alt="Canyon Live Oak" style="width: 63%;">
+         </div>
+        <div class="identifiers">
+          <div class="acornOutline" id="drop9a" data-oak-type="Qchrysolepis"><img src="images/acornOutline.png" alt="acorn outline" style="width:90%;">
+            <div class="tooltip">-acorn-
+              <span class="tooltiptext">Oblong, broad shape with sharp tip<br><br>1 to 3 in long<br><br>Acorn is held in a distinctive, heavy golden cap</span>
+            </div><!--tooltip-->
+          </div><!--outlineDrop-->
+          <div class="leafOutline" id="drop9l" data-oak-type="Qchrysolepis"><img src="images/leafOutline.png" alt="leaf outline" style="width:90%;">
+            <div class="tooltip">-leaf-
+              <span class="tooltiptext">Leathery leaves with elliptical shape<br><br>Can have smooth or spiny edges<br><br>Shiny, dark green above, pale blue or gray below</span>
+            </div><!--tooltip-->
+          </div><!--outlineDrop-->
+          <div class="barkOutline" id="drop9b" data-oak-type="Qchrysolepis"><img src="images/barkOutline.png" alt="bark outline" style="width:90%;">
+            <div class="tooltip">-bark-
+              <span class="tooltiptext">Bark is smooth and white when young, checked and gray with age</span>
+            </div> <!--tooltip-->
+          </div><!--outlineDrop-->
+        </div><!--identifiers-->
+    </div><!--nativeOaks-->
+
+    </div><!--oaksInfo-->
+  </div><!--slideshow-container-->
+  		
+		  <div id="identifierChoices" style="max-width: 50%;">
+        
+        <div id="acorn"> Acorn
+            <div class="acornImage" id="drag1a" data-oak-type="Qagrifolia"><img src="images/acornQagrifolia.png" alt="Quercus agrifolia acorn" style="width: 100%; height:auto";></div>
+            <div class="acornImage" id="drag2a" data-oak-type="Qdouglasii"><img src="images/acornQdouglasii.png" alt="Quercus douglasii acorn" style="width: 100%; height:auto";></div>
+            <div class="acornImage" id="drag3a" data-oak-type="Qkelloggii"><img src="images/acornQkelloggii.png" alt="Quercus kelloggii acorn" style="width: 100%; height:auto";></div>
+            <div class="acornImage" id="drag4a" data-oak-type="Qgarryana"><img src="images/acornQgarryana.png" alt="Quercus garryana acorn" style="width: 100%; height:auto";></div>
+            <div class="acornImage" id="drag5a" data-oak-type="Qlobata"><img src="images/acornQlobata.png" alt="Quercus lobata acorn" style="width: 100%; height:auto";></div>
+            <div class="acornImage" id="drag6a" data-oak-type="Qwislizenii"><img src="images/acornQwislizenii.png" alt="Quercus wislizenii acorn" style="width: 100%; height:auto";></div>
+            <div class="acornImage" id="drag7a" data-oak-type="Qberberidifolia"><img src="images/acornQberberidifolia.png" alt="Quercus berberidifolia acorn" style="width: 100%; height:auto";></div>
+            <div class="acornImage" id="drag8a" data-oak-type="Qdurata"><img src="images/acornQdurata.png" alt="Quercus durata acorn" style="width: 100%; height:auto";></div>
+            <div class="acornImage" id="drag9a" data-oak-type="Qchrysolepis"><img src="images/acornQchrysolepis.png" alt="Quercus chrysolepis acorn" style="width: 100%; height:auto";></div>
+        </div><!--acorn-->
+        
+         <div id="leaf"> Leaf
+            <div class="leafImage" id="drag1l" data-oak-type="Qagrifolia"><img src="images/leafQagrifolia.png" alt="Quercus agrifolia leaf" style="width: 100%; height:auto";></div>
+            <div class="leafImage" id="drag2l" data-oak-type="Qdouglasii"><img src="images/leafQdouglasii.png" alt="Quercus douglasii leaf" style="width: 100%; height:auto";></div>
+            <div class="leafImage" id="drag3l" data-oak-type="Qkelloggii"><img src="images/leafQkelloggii.png" alt="Quercus kelloggii leaf" style="width: 100%; height:auto";></div>
+            <div class="leafImage" id="drag4l" data-oak-type="Qgarryana"><img src="images/leafQgarryana.png" alt="Quercus garryana leaf" style="width: 100%; height:auto";></div>
+            <div class="leafImage" id="drag5l" data-oak-type="Qlobata"><img src="images/leafQlobata.png" alt="Quercus lobata leaf" style="width: 100%; height:auto";></div>
+            <div class="leafImage" id="drag6l" data-oak-type="Qwislizenii"><img src="images/leafQwislizenii.png" alt="Quercus wislizenii leaf" style="width: 100%; height:auto";></div>
+            <div class="leafImage" id="drag7l" data-oak-type="Qberberidifolia"><img src="images/leafQberberidifolia.png" alt="Quercus berberidifolia leaf" style="width: 100%; height:auto";></div>
+            <div class="leafImage" id="drag8l" data-oak-type="Qdurata"><img src="images/leafQdurata.png" alt="Quercus durata leaf" style="width: 100%; height:auto";></div>
+            <div class="leafImage" id="drag9l" data-oak-type="Qchrysolepis"><img src="images/leafQchrysolepis.png" alt="Quercus chrysolepis leaf" style="width: 100%; height:auto";></div>  
+        </div><!--leaf-->
+        
+        <div id="bark"> Bark
+            <div class="barkImage" id="drag1b" data-oak-type="Qagrifolia"><img src="images/barkQagrifolia.png" alt="Quercus agrifolia bark" style="width: 100%; height:auto";></div>
+            <div class="barkImage" id="drag2b" data-oak-type="Qdouglasii"><img src="images/barkQdouglasii.png" alt="Quercus douglasii bark" style="width: 100%; height:auto";></div>
+            <div class="barkImage" id="drag3b" data-oak-type="Qkelloggii"><img src="images/barkQkelloggii.png" alt="Quercus kelloggii bark" style="width: 100%; height:auto";></div>
+            <div class="barkImage" id="drag4b" data-oak-type="Qgarryana"><img src="images/barkQgarryana.png" alt="Quercus garryana bark" style="width: 100%; height:auto";></div>
+            <div class="barkImage" id="drag5b" data-oak-type="Qlobata"><img src="images/barkQlobata.png" alt="Quercus lobata bark" style="width: 100%; height:auto";></div>
+            <div class="barkImage" id="drag6b" data-oak-type="Qwislizenii"><img src="images/barkQwislizenii.png" alt="Quercus wislizenii bark" style="width: 100%; height:auto";></div>
+            <div class="barkImage" id="drag7b" data-oak-type="Qberberidifolia"><img src="images/barkQberberidifolia.png" alt="Quercus berberidifolia acorn" style="width: 100%; height:auto";></div>
+            <div class="barkImage" id="drag8b" data-oak-type="Qdurata"><img src="images/barkQdurata.png" alt="Quercus durata bark" style="width: 100%; height:auto";></div>
+            <div class="barkImage" id="drag9b" data-oak-type="Qchrysolepis"><img src="images/barkQchrysolepis.png" alt="Quercus chrysolepis bark" style="width: 100%; height:auto";></div>
+        </div><!--bark-->
+   
+      </div>	 <!--identifier choices -->
+      
+
+      
+</div><!--allInfo-->
+      <div id="successMessage">You did it!</div>
+
+
+<script>
+let correctAnswers = 0;
+
+ document.getElementById("successMessage").style.display="none";
+
+let acorns = document.getElementsByClassName('acornImage');
+let acornsArray = Array.from(acorns);
+acornsArray.sort(function(){return Math.random() - 0.5});
+for (var i=0; i<9; i++) {
+ $(acornsArray[i]).appendTo('#acorn');
+}
+
+let leafs = document.getElementsByClassName('leafImage');
+let leafsArray = Array.from(leafs);
+leafsArray.sort(function(){return Math.random() - 0.5});
+for (var i=0; i<9; i++) {
+ $(leafsArray[i]).appendTo('#leaf');
+}
+
+let barks = document.getElementsByClassName('barkImage');
+let barksArray = Array.from(barks);
+barksArray.sort(function(){return Math.random() - 0.5});
+for (var i=0; i<9; i++) {
+ $(barksArray[i]).appendTo('#bark');
+}
+ 
+//move through trees
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  let slides = document.getElementsByClassName("nativeOaks");
+  let dots = document.getElementsByClassName("dot");
+
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+//drag and drop
+//1 - Q.agrifolia
+$("#drag1a").draggable({
+  stack: "#identifiers",
+  containment: "#allInfo",
+  cursor: 'move',
+  snap: "#drop1a",
+  helper: 'clone',
+  revert: true
+});
+$("#drag1l").draggable({
+  stack: "#identifiers",
+  containment: "#allInfo",
+  cursor: 'move',
+  snap: "#drop1l",
+  helper: 'clone',
+  revert: true
+});
+$("#drag1b").draggable({
+  stack: "#identifiers",
+  containment: "#allInfo",
+  cursor: 'move',
+  snap: "#drop1b",
+  helper: 'clone',
+  revert: true
+  });
+
+  //2 - Q. douglasii
+ $("#drag2a").draggable({
+  stack: "#identifiers",
+  containment: "#allInfo",
+  cursor: 'move',
+  snap: "#drop2a",
+  helper: 'clone',
+  revert: true
+});
+$("#drag2l").draggable({
+  stack: "#identifiers",
+  containment: "#allInfo",
+  cursor: 'move',
+  snap: "#drop2l",
+  helper: 'clone',
+  revert: true
+});
+$("#drag2b").draggable({
+  stack: "#identifiers",
+  containment: "#allInfo",
+  cursor: 'move',
+  snap: "#drop2b",
+   helper: 'clone',
+  revert: true
+});
+
+//3. Q. kelloggii
+$("#drag3a").draggable({
+  stack: "#identifiers",
+  containment: "#allInfo",
+  cursor: 'move',
+  snap: "#drop3a",
+  helper: 'clone',
+  revert: true
+});
+$("#drag3l").draggable({
+  stack: "#identifiers",
+  containment: "#allInfo",
+  cursor: 'move',
+  snap: "#drop3l",
+  helper: 'clone',
+  revert: true
+});
+$("#drag3b").draggable({
+  stack: "#identifiers",
+  containment: "#allInfo",
+  cursor: 'move',
+  snap: "#drop3b",
+  helper: 'clone',
+  revert: true
+  });
+
+//4 - Q. garryana
+$("#drag4a").draggable({
+  stack: "#identifiers",
+  containment: "#allInfo",
+  cursor: 'move',
+  snap: "#drop4a",
+  helper: 'clone',
+  revert: true
+});
+$("#drag4l").draggable({
+  stack: "#identifiers",
+  containment: "#allInfo",
+  cursor: 'move',
+  snap: "#drop4l",
+  helper: 'clone',
+  revert: true
+});
+$("#drag4b").draggable({
+  stack: "#identifiers",
+  containment: "#allInfo",
+  cursor: 'move',
+  snap: "#drop4b",
+  helper: 'clone',
+  revert: true
+  });
+
+  //5th oak
+ $("#drag5a").draggable({
+  stack: "#identifiers",
+  containment: "#allInfo",
+  cursor: 'move',
+  snap: "#drop5a",
+  helper: 'clone',
+  revert: true
+});
+$("#drag5l").draggable({
+  stack: "#identifiers",
+  containment: "#allInfo",
+  cursor: 'move',
+  snap: "#drop5l",
+  helper: 'clone',
+  revert: true
+});
+$("#drag5b").draggable({
+  stack: "#identifiers",
+  containment: "#allInfo",
+  cursor: 'move',
+  snap: "#drop5b",
+  helper: 'clone',
+  revert: true
+});
+
+//6th oak
+$("#drag6a").draggable({
+  stack: "#identifiers",
+  containment: "#allInfo",
+  cursor: 'move',
+  snap: "#drop6a",
+  helper: 'clone',
+  revert: true
+});
+$("#drag6l").draggable({
+  stack: "#identifiers",
+  containment: "#allInfo",
+  cursor: 'move',
+  snap: "#drop6l",
+  helper: 'clone',
+  revert: true
+});
+$("#drag6b").draggable({
+  stack: "#identifiers",
+  containment: "#allInfo",
+  cursor: 'move',
+  snap: "#drop6b",
+  helper: 'clone',
+  revert: true
+  });
+
+  //7th tree
+  $("#drag7a").draggable({
+  stack: "#identifiers",
+  containment: "#allInfo",
+  cursor: 'move',
+  snap: "#drop7a",
+  helper: 'clone',
+  revert: true
+});
+$("#drag7l").draggable({
+  stack: "#identifiers",
+  containment: "#allInfo",
+  cursor: 'move',
+  snap: "#drop7l",
+  helper: 'clone',
+  revert: true
+});
+$("#drag7b").draggable({
+  stack: "#identifiers",
+  containment: "#allInfo",
+  cursor: 'move',
+  snap: "#drop7b",
+  helper: 'clone',
+  revert: true
+  });
+
+  //8th oak
+ $("#drag8a").draggable({
+  stack: "#identifiers",
+  containment: "#allInfo",
+  cursor: 'move',
+  snap: "#drop8a",
+  helper: 'clone',
+  revert: true
+});
+$("#drag8l").draggable({
+  stack: "#identifiers",
+  containment: "#allInfo",
+  cursor: 'move',
+  snap: "#drop8l",
+  helper: 'clone',
+  revert: true
+});
+$("#drag8b").draggable({
+  stack: "#identifiers",
+  containment: "#allInfo",
+  cursor: 'move',
+  snap: "#drop8b",
+  helper: 'clone',
+  revert: true
+});
+
+//9th oak
+$("#drag9a").draggable({
+  stack: "#identifiers",
+  containment: "#allInfo",
+  cursor: 'move',
+  snap: "#drop9a",
+  helper: 'clone',
+  revert: true
+});
+$("#drag9l").draggable({
+  stack: "#identifiers",
+  containment: "#allInfo",
+  cursor: 'move',
+  snap: "#drop9l",
+  helper: 'clone',
+  revert: true
+});
+$("#drag9b").draggable({
+  stack: "#identifiers",
+  containment: "#allInfo",
+  cursor: 'move',
+  snap: "#drop9b",
+  helper: 'clone',
+  revert: true
+  });
+  
+//drops
+//first oak
+$("#drop1a").droppable({
+  accept: "#drag1a",
+  hoverClass: 'hovered',
+  drop: handleDropEvent
+});
+
+$("#drop1l").droppable({
+    accept: "#drag1l",
+    hoverClass: 'hovered',
+    drop: handleDropEvent
+});
+$("#drop1b").droppable({
+    accept: "#drag1b",
+    hoverClass: 'hovered',
+    drop: handleDropEvent
+});
+
+//second oak
+$("#drop2a").droppable({
+  accept: "#drag2a",
+  hoverClass: 'hovered',
+  drop: handleDropEvent
+});
+$("#drop2l").droppable({
+    accept: "#drag2l",
+    hoverClass: 'hovered',
+    drop: handleDropEvent
+});
+$("#drop2b").droppable({
+    accept: "#drag2b",
+    hoverClass: 'hovered',
+    drop: handleDropEvent
+});
+
+//third oak
+$("#drop3a").droppable({
+  accept: "#drag3a",
+  hoverClass: 'hovered',
+  drop: handleDropEvent
+});
+$("#drop3l").droppable({
+    accept: "#drag3l",
+    hoverClass: 'hovered',
+    drop: handleDropEvent
+});
+$("#drop3b").droppable({
+    accept: "#drag3b",
+    hoverClass: 'hovered',
+    drop: handleDropEvent
+});
+
+//fourth oak
+$("#drop4a").droppable({
+  accept: "#drag4a",
+  hoverClass: 'hovered',
+  drop: handleDropEvent
+});
+$("#drop4l").droppable({
+    accept: "#drag4l",
+    hoverClass: 'hovered',
+    drop: handleDropEvent
+});
+$("#drop4b").droppable({
+    accept: "#drag4b",
+    hoverClass: 'hovered',
+    drop: handleDropEvent
+});
+
+//fifth  oak
+$("#drop5a").droppable({
+  accept: "#drag5a",
+  hoverClass: 'hovered',
+  drop: handleDropEvent
+});
+$("#drop5l").droppable({
+    accept: "#drag5l",
+    hoverClass: 'hovered',
+    drop: handleDropEvent
+});
+$("#drop5b").droppable({
+    accept: "#drag5b",
+    hoverClass: 'hovered',
+    drop: handleDropEvent
+});
+
+//sixth oak
+$("#drop6a").droppable({
+  accept: "#drag6a",
+  hoverClass: 'hovered',
+  drop: handleDropEvent
+});
+$("#drop6l").droppable({
+    accept: "#drag6l",
+    hoverClass: 'hovered',
+    drop: handleDropEvent
+});
+$("#drop6b").droppable({
+    accept: "#drag6b",
+    hoverClass: 'hovered',
+    drop: handleDropEvent
+});
+
+//7th oak
+$("#drop7a").droppable({
+  accept: "#drag7a",
+  hoverClass: 'hovered',
+  drop: handleDropEvent
+});
+$("#drop7l").droppable({
+    accept: "#drag7l",
+    hoverClass: 'hovered',
+    drop: handleDropEvent
+});
+$("#drop7b").droppable({
+    accept: "#drag7b",
+    hoverClass: 'hovered',
+    drop: handleDropEvent
+});
+
+//8th oak
+$("#drop8a").droppable({
+  accept: "#drag8a",
+  hoverClass: 'hovered',
+  drop: handleDropEvent
+});
+$("#drop8l").droppable({
+    accept: "#drag8l",
+    hoverClass: 'hovered',
+    drop: handleDropEvent
+});
+$("#drop8b").droppable({
+    accept: "#drag8b",
+    hoverClass: 'hovered',
+    drop: handleDropEvent
+});
+
+//9th oak
+$("#drop9a").droppable({
+  accept: "#drag9a",
+  hoverClass: 'hovered',
+  drop: handleDropEvent
+});
+$("#drop9l").droppable({
+    accept: "#drag9l",
+    hoverClass: 'hovered',
+    drop: handleDropEvent
+});
+$("#drop9b").droppable({
+    accept: "#drag9b",
+    hoverClass: 'hovered',
+    drop: handleDropEvent
+});
+
+
+function handleDropEvent( ev, ui ) {
+  let acornDropNumber = $(this).attr("data-oak-type");
+  let acornChoiceNumber = $(ui.draggable).attr("data-oak-type");
+  
+  let idDrop = $(this).attr('id');
+  let idDrag = $(ui.draggable).attr('id');
+  
+  let dropped = document.getElementById(idDrop);
+  let dragged = document.getElementById(idDrag);
+  
+  if (acornDropNumber == acornChoiceNumber) {
+  
+    ui.draggable.draggable('disable');
+    $(this).droppable('disable');
+    ui.draggable.draggable('option', 'revert', false);
+    dropped.appendChild(dragged);
+    ui.draggable.position({of: $(this), my: 'center center', at: 'center center'});
+    correctAnswers++;
+   
+  } 
+  
+if(correctAnswers == 27){
+ document.getElementById("successMessage").style.display="block";
+}
+  
+}//handleDropEvent
+
+
+  
+
+
+</script>
+
+</body>
+</html> 
