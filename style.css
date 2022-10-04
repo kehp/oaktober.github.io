@@ -1,0 +1,171 @@
+
+* {box-sizing: border-box}
+
+body {font-family: Verdana, sans-serif; margin:0}
+html, body {
+  height: 100%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1;
+  height: 100%;
+}
+
+/*dots */
+.dot-container {
+    text-align: center;
+    padding: 5px;
+    background: #fff;
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Slides */
+.nativeOaks {
+  display: none;
+  padding: 5px;
+  text-align: center;
+}
+
+.treeName{
+  font-family: Georgia, "Times New Roman", serif;
+  color: #616161;
+  font-size: 1.25em;
+}
+.oakName, .latinName {
+  color: #616161;
+  font-size: 1.25em;
+  line-height: 0.75em
+  }
+.pictureHolder {
+  max-width: 600px;
+  max-height: 500px;
+  margin: auto;
+}
+ .tree{
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+}
+.identifiers {
+  display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+  padding: 10px 20px 10px 20px;
+}
+.acornOutline, .leafOutline, .barkOutline{
+    border: 2px dashed rgb(96, 56, 19);
+    padding: 25px 5px 5px 5px;
+    margin: 5px;
+    width: 200px;
+    height: 200px;
+}
+  
+/*tool tips*/
+.tooltip {
+  position: relative;
+  display: block;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 250px;
+  background-color:  rgb(35, 25, 25, 0.9);
+  color: #fff;
+  text-align: left;
+  border-radius: 6px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  top: -130px;
+  left: -10px;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+/*tree tool tips*/
+.treetooltip {
+  position: relative;
+  display: inline-block;
+  
+}
+.treetooltip .treetooltiptext {
+  visibility: hidden;
+  width: 300px;
+  background-color:  rgb(35, 25, 25, 0.9);
+  color: #fff;
+  text-align: left;
+  border-radius: 6px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  top: 50px;
+  left: 10px;
+}
+.treetooltip:hover .treetooltiptext {
+  visibility: visible;
+}
+/*container of all*/
+#allInfo{
+  display: flex;
+  flex-direction: row;
+  max-width: 1440px;
+  max-height: 850px;
+  margin: auto;
+  padding: 10px 20px 50px 30px;
+}
+
+/*options to drag*/
+#identifierChoices{
+  display: flex;
+  flex-direction: row;
+  padding: 10px 10px 10px 50px;
+  
+}
+#identifierChoices > div {
+  padding: 10px;
+  text-align:center;
+  border: 2px dashed rgb(96, 56, 19);
+  display: flex;
+  flex-direction: column;
+  max-width: 220px;
+  overflow: scroll;
+  
+}
+.hovered{
+  background-color: rgb(96, 56, 19, 0.3);
+}
+
+#successMessage {
+  position: absolute;
+  z-index: 2;
+  width: 500px;
+  height: 200px;
+  background: #dfd;
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 50px 30px;
+  top: 250px;
+  right: 150px;
+  text-align: center;
+  margin: 50px 20px;
+  color: #fff;
+  background-color: rgb(35, 25, 25, 0.9);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 4em;
+}
