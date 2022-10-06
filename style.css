@@ -57,6 +57,15 @@ html, body {
   max-height: 500px;
   margin: auto;
 }
+.imageAttribution{
+  text-align: left;
+  font-size: 0.65em;
+  line-height: 0em;
+  color: #616161;
+  margin-left: 120px;
+  margin-top: .25em;
+  padding: 0;
+}
  .tree{
   max-width: 100%;
   max-height: 100%;
@@ -68,11 +77,13 @@ html, body {
 		flex-wrap: nowrap;
 		justify-content: space-around;
   padding: 10px 20px 10px 20px;
+  margin-top: 0px;
 }
 .acornOutline, .leafOutline, .barkOutline{
     border: 2px dashed rgb(96, 56, 19);
     padding: 25px 5px 5px 5px;
     margin: 5px;
+    margin-top: 0px;
     width: 200px;
     height: 200px;
 }
@@ -145,7 +156,14 @@ html, body {
   flex-direction: column;
   max-width: 220px;
   overflow: scroll;
+  margin: 0;
   
+}
+#img{
+ text-align: left;
+ font-size: 8px;
+ margin: 0;
+ 
 }
 .hovered{
   background-color: rgb(96, 56, 19, 0.3);
